@@ -1,0 +1,32 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .platform-card.selected {
+    border: 2px solid #4CAF50;
+  }
+  
+  .notification {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .notification.show {
+    transform: translateY(0);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #youtubePlayer iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  :where([class^="ri-"])::before { 
+    content: "\f3c2"; 
+  }
